@@ -56,26 +56,26 @@ public class WebsocketManagerServiceImpl implements WebSocketService {
 	private volatile Map<String,String> allDic2 = new HashMap<>(); ;//内网为键
 	
 	private UpdateConnectHandler updateConnectHandler;
-	@Value("${spring.netty-service.configsStr}")
+	@Value("${service.micro-service.simple-netty-service.configsStr}")
 	private String configsStr;
 	private int port;
 //	private int serverId;
 	private String ip;
-	@Value("${spring.netty-service.onlinePrefix}")
+	@Value("${service.micro-service.simple-netty-service.onlinePrefix}")
 	private String onlinePrefix;
 	
 	@Value("${spring.lock-cinfig.zookeeperAddr}")
 	private String zkpAddr;
 	@Value("${spring.lock-cinfig.zkpTimeout}")
 	private int zkpClientTimeout;
-	@Value("${spring.netty-service.protocol.port}")
+	@Value("${service.micro-service.simple-netty-service.protocol-port}")
 	private int handlerDubboPort;
 //	private String redisHost;
-	@Value("${spring.netty-service.privatekey}")
+	@Value("${service.micro-service.simple-netty-service.privatekey}")
 	private String privatekey;
 	private String ipAndPort;
 	public List<String> serverConfigs;
-	@Value("${spring.netty-service.redisonlineKey}")
+	@Value("${service.micro-service.simple-netty-service.redisonlineKey}")
 	private String redisOnlineKey;
 	@Autowired
 	SocketHandler handler;

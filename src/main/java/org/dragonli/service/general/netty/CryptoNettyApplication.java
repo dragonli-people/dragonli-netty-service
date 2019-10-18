@@ -15,12 +15,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class CryptoNettyApplication extends DubboApplicationBase {
 
 	public CryptoNettyApplication(
-			@Value("${spring.netty-service.application.name}") String applicationName,
-			@Value("${spring.common.registry.address}") String registryAddr,
-			@Value("${spring.netty-service.protocol.name}") String protocolName,
-			@Value("${spring.netty-service.protocol.port}") Integer protocolPort,
-			@Value("${spring.netty-service.scan}") String registryId,
-			@Value("${micro-service-port.netty-service-port}") int port
+			@Value("${service.micro-service.simple-netty-service.application-name}") String applicationName,
+			@Value("${service.micro-service.common.registry-address}") String registryAddr,
+			@Value("${service.micro-service.simple-netty-service.protocol-name}") String protocolName,
+			@Value("${service.micro-service.simple-netty-service.protocol-port}") Integer protocolPort,
+			@Value("${service.micro-service.simple-netty-service.scan}") String registryId,
+			@Value("${service.micro-service.simple-netty-service.http-port}")  int port
 		)
 	{
 

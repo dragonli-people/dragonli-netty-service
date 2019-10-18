@@ -37,7 +37,7 @@ public class SocketHandler implements INettySocketHandler {
 	private static final AtomicInteger connectCount = new AtomicInteger(0);
 	@Autowired
 	private RedissonClient redissonClient;
-	@Value("${spring.netty-service.redisonlineKey}")
+	@Value("${service.micro-service.simple-netty-service.redisonlineKey}")
 	private String redisOnlineKey;
 	private String ip;
 	private WebSocketService ws;
@@ -67,7 +67,7 @@ public class SocketHandler implements INettySocketHandler {
 
 	private INettySocketCentral central;
 //	private ConcurrentMap<Integer, SocketPool> socketpools;
-	@Value("${spring.netty-service.privatekey}")
+	@Value("${service.micro-service.simple-netty-service.privatekey}")
 	private String privateKey;
 	
 	@Override
