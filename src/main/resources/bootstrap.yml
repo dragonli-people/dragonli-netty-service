@@ -10,5 +10,4 @@ spring:
 
 service:
   general:
-    open:
-      redis: true
+    redis-open: true
