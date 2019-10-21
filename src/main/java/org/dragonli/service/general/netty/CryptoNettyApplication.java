@@ -20,11 +20,13 @@ public class CryptoNettyApplication extends DubboApplicationBase {
 			@Value("${service.micro-service.simple-netty-service.protocol-name}") String protocolName,
 			@Value("${service.micro-service.simple-netty-service.protocol-port}") Integer protocolPort,
 			@Value("${service.micro-service.simple-netty-service.scan}") String registryId,
+			@Value("${service.micro-service.simple-netty-service.group}") String group,
 			@Value("${service.micro-service.simple-netty-service.http-port}")  int port
 		)
 	{
 
-		super(applicationName, registryAddr, protocolName, protocolPort, registryId, port);
+		super(applicationName, registryAddr, protocolName, protocolPort, registryId, port,null,
+				group==null || "".equals(group=group.trim())?null:group);
 	}
 
 	@SuppressWarnings(value = "unused")
