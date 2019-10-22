@@ -9,4 +9,4 @@
     * 在开发环境中，如果需要调试，可在yml文件中临时配置成自己开发机的ip
 * privatekey：这个参数最好通过 --CONFIG_PRIVATE_KEY 覆盖成私有订制值。是加密验证uniqueId是否合法的私钥。
 * 您可以修改service.micro-service.simple-netty-service来修改服务所需的配置
-* 与所有服务一样，您可以设置 --MICRO_SERVICE_PORT、--MICRO_SERVICE_GROUP、--MICRO_SERVICE_HTTP_PORT分别用来覆盖微服务端口号、分组、http端口号，（尤其是在端口号冲突之时）
+* 与所有服务一样，您可以设置 --MICRO_SERVICE_PORT、--MICRO_SERVICE_GROUP、--MICRO_SERVICE_HTTP_PORT分别用来覆盖微服务端口号、分组、http端口号（尤其是在端口号冲突之时）
