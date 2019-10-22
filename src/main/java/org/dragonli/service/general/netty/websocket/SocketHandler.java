@@ -244,7 +244,7 @@ public class SocketHandler implements INettySocketHandler {
 //		if( f )
 //			return true;
 		logger.info("test1 - 1:");
-		Map<String, Object> paras = HttpUtil.getUrlParams(req.getUri());
+		Map<String, Object> paras = HttpUtil.getUrlParams(req.uri());
 		logger.info("test1 - 1:");
 
 		String uuid = GeneralUtil.assertEmpty( paras.get("uuid").toString() );
