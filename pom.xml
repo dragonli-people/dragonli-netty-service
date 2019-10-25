@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.dragonli.service</groupId>
 		<artifactId>dubbo-service-parent</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 	</parent>
 
 	<artifactId>dragonli-netty-service</artifactId>
@@ -18,13 +18,13 @@
 		<dependency>
 			<groupId>org.dragonli.service</groupId>
 			<artifactId>dragonli-general-service-interfaces</artifactId>
-			<version>1.0</version>
+			<version>1.0.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.dragonli.service</groupId>
 			<artifactId>dragonli-netty-core</artifactId>
-			<version>1.0</version>
+			<version>1.0.2</version>
 		</dependency>
 
 	</dependencies>

@@ -64,9 +64,9 @@ public class WebsocketManagerServiceImpl implements WebSocketService {
 	@Value("${service.micro-service.simple-netty-service.onlinePrefix}")
 	private String onlinePrefix;
 	
-	@Value("${spring.lock-cinfig.zookeeperAddr}")
+	@Value("${service.general.lock-zookeeper-config.zookeeperAddr}")
 	private String zkpAddr;
-	@Value("${spring.lock-cinfig.zkpTimeout}")
+	@Value("${service.general.lock-zookeeper-config.zkpTimeout}")
 	private int zkpClientTimeout;
 	@Value("${service.micro-service.simple-netty-service.protocol-port}")
 	private int handlerDubboPort;
@@ -117,7 +117,7 @@ public class WebsocketManagerServiceImpl implements WebSocketService {
 			}
 			
 			public void doRun() throws Exception {
-				Thread.sleep(40000);//?? lin shi try 10 ?
+				Thread.sleep(3000);//?? lin shi try 10 ?
 				parseConfig();
 				
 				
@@ -334,7 +334,7 @@ public class WebsocketManagerServiceImpl implements WebSocketService {
 			}
 
 		}
-		throw new Exception("no config with this ip");
+		throw new Exception("no config with this ip:"+ip);
 	}
 
 	/**
