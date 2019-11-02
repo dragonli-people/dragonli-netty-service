@@ -397,11 +397,6 @@ public class WebsocketManagerServiceImpl implements WebSocketService {
 //		logger.info("user:"+unid+" topic update to redis succeed!");
 		return true;
 	}
-
-	@Override
-	public boolean unsubscribeByUnid(String topic,String unid){
-		return getWebSocketServiceByUnid(unid).unsubscribe(topic, unid);
-	}
 	
 	@Override
 	public boolean unsubscribe(String topic,String unid){
